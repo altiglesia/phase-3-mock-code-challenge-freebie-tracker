@@ -17,5 +17,14 @@ puts "Creating freebies..."
 # * and a freebie belongs to a company.                         *
 # ***************************************************************
 # Create freebies Here
+Freebie.create(item_name: "Water Bottle", value: "5.00", dev_id: rand(1..4), company_id: rand(1..4))
+Freebie.create(item_name: "Keychain", value: "2.00", dev_id: rand(1..4), company_id: rand(1..4))
+Freebie.create(item_name: "Swag", value: "13.00", dev_id: rand(1..4), company_id: rand(1..4))
 
 puts "Seeding done!"
+
+
+# facebook = Company.find(2)
+# morty = Dev.find(2)
+# new_freebie = facebook.give_freebie(morty, "pen", 3)
+# swag = Freebie.find(3)
